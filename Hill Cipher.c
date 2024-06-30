@@ -67,7 +67,7 @@ int main() {
 
 
 
-	printf("Enter the message IN UPPERCASE (up to %d characters): ", keySize * keySize);
+	printf("Enter the message IN UPPERCASE : ", keySize * keySize);
 	//fgets(message, sizeof(message), stdin);
 	scanf("%s", message);
 
