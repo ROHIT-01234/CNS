@@ -9,7 +9,7 @@ char generate_cipher(char key[], char alphabet[], char cipher[], char decipher[]
     int key_len = strlen(key);
     
     // Create encryption mapping based on the key
-    int i, j, index;
+    int i,index;
     // Process key letters
     index = 0;
     for (i = 0; i < key_len; i++) {
