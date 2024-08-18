@@ -3,8 +3,8 @@
 #include <stdbool.h>
 
 #define ALPHABET_SIZE 26
-
-char generate_cipher(char key[], char alphabet[], char cipher[], char decipher[]) {
+//Alphabets: "abcdefghijklmnopqrstuvwxyz"
+char generate_cipher(char key[], char cipher[], char decipher[]) {
     bool used[ALPHABET_SIZE] = {false};
     int key_len = strlen(key);
     
@@ -62,7 +62,7 @@ int main() {
     printf("\nEnter Key: ");
     scanf("%s", key);
     
-    generate_cipher(key, "abcdefghijklmnopqrstuvwxyz", cipher, decipher);
+    generate_cipher(key, cipher, decipher);
     
     printf("\nCipher: %s\n", cipher);
     printf("Decipher: %s\n", decipher);
