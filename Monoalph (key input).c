@@ -31,7 +31,6 @@ char generate_cipher(char key[], char alphabet[], char cipher[], char decipher[]
     
     // Create decryption mapping
     for (i = 0; i < ALPHABET_SIZE; i++) {
-        cipher[i] = cipher[i];
         decipher[cipher[i] - 'a'] = 'a' + i;
     }
     decipher[ALPHABET_SIZE] = '\0';
